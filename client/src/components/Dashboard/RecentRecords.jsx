@@ -63,7 +63,9 @@ export default function RecentRecords({ records = [] }) {
 
           {recent.map((item) => {
 
-            const imageUrl = item.image;
+            const imageUrl = item.image?.startsWith("http")
+              ? item.image
+              : `https://track-verify-protect-ecoaudit-full-stack.onrender.com/uploads/${item.image}`;
 
             return (
 
