@@ -7,7 +7,7 @@ import Statistics from "../components/Statistics/Statistics";
 import HowItWorks from "../components/HowItWorks/HowItWorks";
 import CTA from "../components/CTA/CTA";
 import Footer from "../components/Footer/Footer";
-import FallingLeaves from "../components/FallingLeaves/Fallingleaves";
+import FallingLeaves from "../components/FallingLeaves/FallingLeaves";
 
 import { getWaste } from "../services/wasteService";
 
