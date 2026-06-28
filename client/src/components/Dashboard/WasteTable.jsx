@@ -99,7 +99,7 @@ export default function WasteTable({
                 records.map((item) => {
 
                   const imageUrl = item.image
-                    ? `http://localhost:5000/uploads/${item.image}`
+                    ? `https://track-verify-protect-ecoaudit-full-stack.onrender.com/uploads/${item.image}`
                     : null;
 
                   return (
