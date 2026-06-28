@@ -9,7 +9,7 @@ import BarAnalytics from "../components/Dashboard/BarAnalytics";
 import RecentRecords from "../components/Dashboard/RecentRecords";
 import WasteTable from "../components/Dashboard/WasteTable";
 import WasteMap from "../components/Dashboard/WasteMap";
-import FallingLeaves from "../components/FallingLeaves/FallingLeaves";
+import FallingLeaves from "../components/FallingLeaves/FallingLeaves.jsx";
 import "./Background.css";
 
 export default function Dashboard() {
