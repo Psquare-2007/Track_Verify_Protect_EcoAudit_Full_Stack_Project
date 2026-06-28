@@ -76,8 +76,8 @@ export default function Footer() {
             <div className="flex translate-y-5 flex-col gap-5">
 
               <Link
-                href="#"
                 to="/"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="hover:text-green-400 transition"
               >
                 Home
