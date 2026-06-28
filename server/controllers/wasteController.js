@@ -1,14 +1,51 @@
 import Waste from "../models/Waste.js";
+import cloudinary from "../config/cloudinary.js";
+import streamifier from "streamifier";
 
 export const addWaste = async (req, res) => {
   try {
+
+    let imageUrl = "";
+
+    if (req.file) {
+
+      const uploadFromBuffer = () =>
+        new Promise((resolve, reject) => {
+
+          const uploadStream = cloudinary.uploader.upload_stream(
+            {
+              folder: "EcoAudit",
+            },
+            (error, result) => {
+
+              if (error) return reject(error);
+
+              resolve(result);
+
+            }
+          );
+
+          streamifier
+            .createReadStream(req.file.buffer)
+            .pipe(uploadStream);
+
+        });
+
+      const result = await uploadFromBuffer();
+
+      imageUrl = result.secure_url;
+
+    }
+
     const waste = await Waste.create({
+
       wasteType: req.body.wasteType,
       weight: req.body.weight,
       description: req.body.description,
       latitude: req.body.latitude,
       longitude: req.body.longitude,
-      image: req.file ? req.file.filename : "",
+      image: imageUrl,
+
     });
 
     res.status(201).json({
