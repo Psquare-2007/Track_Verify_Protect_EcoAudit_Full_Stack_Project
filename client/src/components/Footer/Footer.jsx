@@ -76,6 +76,7 @@ export default function Footer() {
             <div className="flex translate-y-5 flex-col gap-5">
 
               <Link
+                href="#"
                 to="/"
                 className="hover:text-green-400 transition"
               >
