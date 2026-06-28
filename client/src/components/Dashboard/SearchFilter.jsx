@@ -63,7 +63,7 @@ export default function SearchFilter({
               }
               className="
                 translate-y-3
-                -translate-x-5
+                -translate-x-10
                 w-full
                 h-10
                 rounded-full
