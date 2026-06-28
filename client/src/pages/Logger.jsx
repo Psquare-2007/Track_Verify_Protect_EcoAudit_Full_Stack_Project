@@ -55,7 +55,10 @@ export default function Logger() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    if (Number(form.weight) <= 0) {
+      toast.error("Weight must be greater than 0 kg");
+      return;
+    }
     try {
       const formData = new FormData();
 
