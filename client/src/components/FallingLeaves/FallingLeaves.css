@@ -1,0 +1,87 @@
+#leaf-container{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+/* Leaf */
+
+.leaf{
+
+    position:absolute;
+
+    top:-80px;
+
+    opacity:.95;
+
+    will-change:transform;
+
+    animation:fall linear infinite;
+
+    filter:
+    drop-shadow(0 0 8px var(--glow-color))
+    contrast(1.2);
+
+}
+
+/* SVG */
+
+.leaf svg{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+/* Animation */
+
+@keyframes fall{
+
+    0%{
+
+        top:-80px;
+
+        transform:
+        translateX(0)
+        rotate3d(
+        1,
+        1,
+        1,
+        var(--start-rot));
+
+    }
+
+    100%{
+
+        top:110vh;
+
+        transform:
+        translateX(var(--drift))
+        rotate3d(
+        1,
+        2,
+        1,
+        var(--end-rot));
+
+    }
+
+}
+
+.leaf-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 5;
+    overflow: hidden;
+}
