@@ -1,6 +1,6 @@
-/* ============================
+/* 
    EcoAudit Global Background
-   ============================ */
+    */
 
 html,
 body,
@@ -16,9 +16,9 @@ body {
   overflow-x: hidden;
 }
 
-/* ============================
+/* 
    Main Background
-   ============================ */
+    */
 
 .eco-background {
   position: relative;
@@ -79,9 +79,9 @@ body {
   filter: blur(150px);
 }
 
-/* ============================
+/* 
    Content Wrapper
-   ============================ */
+    */
 
 .eco-content {
   position: relative;
@@ -89,11 +89,14 @@ body {
   min-height: 100vh;
 }
 
-/* ============================
+/*
    Glass Card
-   ============================ */
+   */
 
 .glass-card {
+  position: relative;
+  z-index: 20;
+
   background: rgba(255,255,255,0.18);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -106,10 +109,9 @@ body {
 
   border-radius: 24px;
 }
-
-/* ============================
+/* 
    Glass Button
-   ============================ */
+   */
 
 .glass-button {
   background: rgba(255,255,255,0.18);
@@ -117,9 +119,9 @@ body {
   border: 1px solid rgba(255,255,255,0.3);
 }
 
-/* ============================
+/*
    Glass Input
-   ============================ */
+    */
 
 .glass-input {
   background: rgba(255,255,255,0.18);
