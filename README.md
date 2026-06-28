@@ -101,11 +101,11 @@ EcoAudit/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/EcoAudit.git
+git clone https://github.com/Psquare-2007/Track_Verify_Protect_EcoAudit_Full_Stack_Project.git
 ```
 
 ```bash
-cd EcoAudit
+cd Track_Verify_Protect_EcoAudit_Full_Stack_Project
 ```
 
 ---
@@ -127,8 +127,7 @@ Create a `.env` file
 ```env
 PORT=5000
 
-MONGO_URI=your_mongodb_connection_string
-```
+MONGO_URI=mongodb://psquare:psquare@ac-8d4yi9a-shard-00-00.4pnnyhz.mongodb.net:27017,ac-8d4yi9a-shard-00-01.4pnnyhz.mongodb.net:27017,ac-8d4yi9a-shard-00-02.4pnnyhz.mongodb.net:27017/ecoaudit?ssl=true&replicaSet=atlas-wt99hy-shard-0&authSource=admin&retryWrites=true&w=majority&appName=M0```
 
 Run server
 
@@ -197,27 +196,6 @@ PUT /api/waste/verify/:id
 ```
 DELETE /api/waste/:id
 ```
-
----
-
-## Screenshots
-
-### Home Page
-
-(Add screenshot here)
-
----
-
-### Waste Logger
-
-(Add screenshot here)
-
----
-
-### Dashboard
-
-(Add screenshot here)
-
 ---
 
 ## Future Improvements
@@ -246,7 +224,7 @@ Problem Statement:
 
 ## Author
 
-**Prithivirajan**
+**Prithivirajan P**
 
 VIT Chennai
 
