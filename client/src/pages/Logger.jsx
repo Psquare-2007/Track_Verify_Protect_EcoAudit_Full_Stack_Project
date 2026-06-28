@@ -169,6 +169,8 @@ export default function Logger() {
               <input
                 type="number"
                 name="weight"
+                min="0.1"
+                step="0.1"
                 value={form.weight}
                 onChange={handleChange}
                 className="
