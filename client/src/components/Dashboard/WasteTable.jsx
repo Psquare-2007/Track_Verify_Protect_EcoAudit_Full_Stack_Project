@@ -98,9 +98,7 @@ export default function WasteTable({
 
                 records.map((item) => {
 
-                  const imageUrl = item.image
-                    ? `https://track-verify-protect-ecoaudit-full-stack.onrender.com/uploads/${item.image}`
-                    : null;
+                  const imageUrl = item.image;
 
                   return (
 
