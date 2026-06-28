@@ -18,6 +18,7 @@ The application allows users to log waste disposal records with automatic GPS ve
 - Location verification
 - Form validation
 - Toast notifications
+- Cloudinary image storage
 
 ### Dashboard
 - View all submitted waste reports
@@ -58,11 +59,17 @@ The application allows users to log waste disposal records with automatic GPS ve
 - MongoDB
 - Mongoose
 - Multer
+- Cloudinary
 - CORS
 - dotenv
 
 ### Database
 - MongoDB Atlas
+
+### Deployment
+- Vercel (Frontend)
+- Render (Backend)
+- Image storage : Cloudinary
 
 ---
 
@@ -122,12 +129,16 @@ Install dependencies
 npm install
 ```
 
-Create a `.env` file
+Create a `.env` file inside the 'server' folder
 
-```env
+'''env
 PORT=5000
 
-MONGO_URI=mongodb://psquare:psquare@ac-8d4yi9a-shard-00-00.4pnnyhz.mongodb.net:27017,ac-8d4yi9a-shard-00-01.4pnnyhz.mongodb.net:27017,ac-8d4yi9a-shard-00-02.4pnnyhz.mongodb.net:27017/ecoaudit?ssl=true&replicaSet=atlas-wt99hy-shard-0&authSource=admin&retryWrites=true&w=majority&appName=M0```
+MONGO_URI=mongodb://psquare:psquare@ac-8d4yi9a-shard-00-00.4pnnyhz.mongodb.net:27017,ac-8d4yi9a-shard-00-01.4pnnyhz.mongodb.net:27017,ac-8d4yi9a-shard-00-02.4pnnyhz.mongodb.net:27017/ecoaudit?ssl=true&replicaSet=atlas-wt99hy-shard-0&authSource=admin&retryWrites=true&w=majority&appName=M0
+
+CLOUDINARY_CLOUD_NAME=duwmfvxfu
+CLOUDINARY_API_KEY=395486352625334
+CLOUDINARY_API_SECRET=g83xcgsq-BRbwVzpEjChwhAzVb0'''
 
 Run server
 
