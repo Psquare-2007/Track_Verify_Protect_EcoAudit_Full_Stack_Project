@@ -2,7 +2,7 @@ import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { addWaste } from "../services/wasteService";
 import "./Background.css";
-import FallingLeaves from "../components/FallingLeaves/FallingLeaves";
+import FallingLeaves from "../components/FallingLeaves/FallingLeaves.jsx";
 
 export default function Logger() {
   const [form, setForm] = useState({
