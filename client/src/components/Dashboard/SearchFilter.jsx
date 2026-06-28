@@ -63,7 +63,7 @@ export default function SearchFilter({
               }
               className="
                 translate-y-3
-                -translate-x-10
+                -translate-x-5
                 w-full
                 h-10
                 rounded-full
@@ -92,7 +92,7 @@ export default function SearchFilter({
 
             <Filter
               size={18}
-              className="absolute -translate-x-6 left-5 translate-y-6 text-green-600"
+              className="absolute -translate-x-6 left-5 translate-y-6 text-green-600 z-10"
             />
 
             <select
