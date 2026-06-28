@@ -51,7 +51,7 @@ export default function SearchFilter({
 
             <Search
               size={20}
-              className="absolute translate-x-81 left-5 top-1/2 text-green-600"
+              className="absolute translate-x-81 left-5 top-1/2 text-green-600 z-10"
             />
 
             <input
