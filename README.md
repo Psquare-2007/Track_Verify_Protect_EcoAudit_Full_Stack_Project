@@ -134,7 +134,8 @@ Create a `.env` file inside the 'server' folder
 ```env
 PORT=5000
 
-MONGO_URI=mongodb://psquare:psquare@ac-8d4yi9a-shard-00-00.4pnnyhz.mongodb.net:27017,ac-8d4yi9a-shard-00-01.4pnnyhz.mongodb.net:27017,ac-8d4yi9a-shard-00-02.4pnnyhz.mongodb.net:27017/ecoaudit?ssl=true&replicaSet=atlas-wt99hy-shard-0&authSource=admin&retryWrites=true&w=majority&appName=M0
+MONGO_URI= "  "
+ssl=true&replicaSet=atlas-wt99hy-shard-0&authSource=admin&retryWrites=true&w=majority&appName=M0
 
 CLOUDINARY_CLOUD_NAME=duwmfvxfu
 CLOUDINARY_API_KEY=395486352625334
